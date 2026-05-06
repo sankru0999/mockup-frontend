@@ -4,7 +4,7 @@
     "buildCommand": "npm run build"
   },
   "deploy": {
-    "startCommand": "npx serve -s dist --no-clipboard",
+    "startCommand": "npx serve -s dist -l 4173 --no-clipboard",
     "healthcheckPath": "/"
   }
 }
