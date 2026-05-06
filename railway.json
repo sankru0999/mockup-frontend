@@ -1,5 +1,9 @@
 {
   "build": {
-    "builder": "DOCKERFILE"
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "npm run preview",
+    "healthcheckPath": "/"
   }
 }
