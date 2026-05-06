@@ -1,7 +1,9 @@
 {
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npm install --platform=linux --arch=x64 && npm run build",
-    "startCommand": "npm run preview"
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "npm run preview",
+    "healthcheckPath": "/"
   }
 }
