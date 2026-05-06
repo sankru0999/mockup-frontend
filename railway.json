@@ -4,7 +4,7 @@
     "buildCommand": "npm run build"
   },
   "deploy": {
-    "startCommand": "npx vite preview --config vite.config.production.ts --port $PORT --host 0.0.0.0",
+    "startCommand": "npx serve -s dist",
     "healthcheckPath": "/"
   }
 }
