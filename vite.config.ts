@@ -15,9 +15,9 @@ const basePath = process.env.BASE_PATH || "/";
 export default defineConfig({
   base: basePath,
   plugins: [
-    mockupPreviewPlugin(),
-    react(),
-  ],
+  process.env.NODE_ENV !== 'production' && mockupPreviewPlugin(),
+  react(),
+].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
