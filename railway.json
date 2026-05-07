@@ -1,7 +1,7 @@
 {
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "npx vite build --config vite.config.production.ts"
+    "buildCommand": "npx vite build"
   },
   "deploy": {
     "startCommand": "npx serve -s dist -l $PORT",
