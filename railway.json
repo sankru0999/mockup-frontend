@@ -1,10 +1,9 @@
 {
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npx vite build"
+    "builder": "NIXPACKS"
   },
   "deploy": {
-  "startCommand": "./node_modules/.bin/serve -s dist -l $PORT",
-  "healthcheckPath": "/"
-}
+    "startCommand": "npm run start",
+    "healthcheckPath": "/"
+  }
 }
